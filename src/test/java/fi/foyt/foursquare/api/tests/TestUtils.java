@@ -1,11 +1,8 @@
 package fi.foyt.foursquare.api.tests;
 
 import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 
 import fi.foyt.foursquare.api.FoursquareApi;
 

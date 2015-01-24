@@ -1,7 +1,5 @@
 package fi.foyt.foursquare.api.tests;
 
-import java.io.File;
-import java.io.FileReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.StringWriter;
