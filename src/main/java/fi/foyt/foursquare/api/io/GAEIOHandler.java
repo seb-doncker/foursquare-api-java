@@ -28,11 +28,14 @@ public class GAEIOHandler extends IOHandler {
 		try {
 			URL aUrl = new URL(url);
 
-			HTTPMethod httpMethod = HTTPMethod.GET;
+			HTTPMethod httpMethod;
 			switch (method) {
-			case POST:
-				httpMethod = HTTPMethod.POST;
-				break;
+				case POST:
+					httpMethod = HTTPMethod.POST;
+					break;
+				case GET:
+				default:
+					httpMethod = HTTPMethod.GET;
 			}
 
 			HTTPRequest httpRequest = new HTTPRequest(aUrl, httpMethod,

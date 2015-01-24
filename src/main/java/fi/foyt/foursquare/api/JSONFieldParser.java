@@ -54,7 +54,6 @@ public class JSONFieldParser {
       JSONObject jsonObject;
       try {
         jsonObject = jsonArray.getJSONObject(i);
-        System.out.println(jsonObject);
         result[i] = parseEntity(clazz, jsonObject, skipNonExistingFields);
       } catch (JSONException e) {
         throw new FoursquareApiException(e);
